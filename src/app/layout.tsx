@@ -1,17 +1,24 @@
 import type { Metadata } from "next";
-import { Archivo} from 'next/font/google'
+import { Archivo, Inter, Signika } from 'next/font/google'
 import "./globals.css";
 
-const archivo = Archivo({
+const inter = Inter({
   display: 'swap',
   weight: 'variable',
+  subsets: ['greek'],
+  variable: '--font-inter'
+})
+
+const signika = Signika({
+  display: 'swap',
   subsets: ['latin'],
-  variable: '--font-archivo'
+  weight: 'variable',
+  variable: '--font-signika'
 })
 
 export const metadata: Metadata = {
-  title: "Minimal Single Page Portfolio",
-  description: "Created with Frontend Tribe",
+  title: "Jitter A fast and simple motion design tool on the web",
+  description: "jitter.video",
 };
 
 export default function RootLayout({
@@ -21,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${archivo.variable} antialiased bg-stone-200 text-stone-900 font-archivo`}>{children}</body>
+      <body className={`${inter.variable} ${signika.variable} antialiased bg-white text-black font-inter`}>{children}</body>
     </html>
   );
 }

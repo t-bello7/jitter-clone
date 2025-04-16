@@ -14,7 +14,8 @@ const config: Config = {
         },
         extend: {
             fontFamily: {
-                archivo: 'var(--font-archivo)'
+                inter: ['var(--font-inter)', 'Inter', 'sans-serif'],
+                signika: ['var(--font-signika)', 'Signika', 'sans-serif']
             },
             container: {
                 center: true,
@@ -28,6 +29,14 @@ const config: Config = {
                 'red-orange': {
                     500: 'color-mix(in srgb, theme("colors.red.500") 50%,theme("colors.orange.500") 50%)'
                 }
+                // #f0eff1 // light gray
+                // #ffffff // white
+                // #f2f1f3 // gray
+                // #19171c // text overlay dark 
+                // #00b2ff // light blue
+                // #a981ff // light purple
+                // #ecfb09 // light yellow
+                // #000000 //
             }
         },
     },

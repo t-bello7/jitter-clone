@@ -24,9 +24,11 @@ const navItems = [
 const Header: FC = () => {
   return (
     <header>
-  
-      
-    header
+      <div className="container">
+      he
+      </div>
+
+
     </header>
 );
 };
